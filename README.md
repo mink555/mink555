@@ -1,6 +1,6 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=220&section=header&text=Minkyong%20Kim&fontSize=42&fontColor=c9d1d9&fontAlignY=38&animation=fadeIn)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=220&section=header&text=minkyong&fontSize=42&fontColor=c9d1d9&fontAlignY=38&animation=fadeIn)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Turning+data+into+intelligence;Building+%26+evaluating+AI+agents)](https://git.io/typing-svg)
 
@@ -9,7 +9,7 @@
 ---
 
 ```python
-class MinkyongKim:
+class minkyong:
     interests = ["Data Science", "AI Engineering", "Agent Evaluation"]
     focus     = ["Function Calling", "Tool Use", "Benchmarks"]
     languages = ["Python"]

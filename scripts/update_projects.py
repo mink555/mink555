@@ -8,12 +8,12 @@ EXCLUDE = {USERNAME}  # 프로필 리포 자체는 제외
 
 # 리포별 커스텀 설명 (없으면 GitHub description 사용)
 CUSTOM_DESC = {
-    "insurance-compare":       "보험 PDF를 파싱해 당사·타사 암보험 특약을 자동 비교 — 규칙 기반 매칭으로 급부명 차이를 흡수하고 인사이트 리포트 생성",
-    "agent-mvp-eval":          "보험 챗봇의 Tool Routing 고도화 — 54개 도구 중 필요한 것만 동적으로 선택해 오호출·비용·지연을 동시에 줄이는 RAG-MCP 패턴 구현",
-    "lina-bench":              "폐쇄망 MCP 서빙을 위한 오픈소스 LLM 선정 벤치마크 — 106턴 멀티턴 스트레스 테스트로 5개 모델의 Tool Calling 정확도·한국어 품질 비교",
-    "BFCL-V4-Bench":           "BFCL V4 기반 Function Calling 평가 프레임워크 — AST 채점으로 Llama·Mistral·Qwen3 시리즈의 싱글턴 FC 정확도를 정밀 측정",
-    "KAKAO-FunctionChat-Bench": "카카오 FunctionChat-Bench 기반 한국어 Tool-Use 평가 — LLM-as-Judge(GPT-4.1)로 1,306개 케이스의 멀티턴 함수 선택 능력 채점",
-    "TAU2-Bench":              "τ²-bench 기반 멀티턴 에이전트 평가 — 평균 19턴·6회 tool 호출의 고객센터 시나리오로 5개 모델의 실제 과업 완수율 측정",
+    "insurance-compare":        "보험 PDF 파싱 → 당사·타사 암보험 특약 자동 비교 및 인사이트 리포트 생성",
+    "agent-mvp-eval":           "RAG-MCP 패턴으로 54개 보험 도구 중 필요한 것만 동적 선택 — 오호출·비용·지연 개선",
+    "lina-bench":               "폐쇄망 LLM 선정 벤치마크 — 106턴 멀티턴으로 5개 모델의 Tool Calling 정확도 비교",
+    "BFCL-V4-Bench":            "BFCL V4 기반 Function Calling 벤치마크 — AST 채점으로 주요 LLM FC 정확도 정밀 측정",
+    "KAKAO-FunctionChat-Bench": "카카오 FunctionChat-Bench 기반 — LLM-as-Judge로 1,306개 한국어 Tool-Use 케이스 채점",
+    "TAU2-Bench":               "τ²-bench 기반 멀티턴 에이전트 평가 — 고객센터 시나리오로 5개 모델의 과업 완수율 측정",
 }
 
 headers = {
@@ -86,5 +86,19 @@ def update_readme(table):
 if __name__ == "__main__":
     repos = fetch_repos()
     print(f"Found {len(repos)} public repos.")
+
+    # 각 리포 description(About) 업데이트
+    for r in repos:
+        name = r["name"]
+        if name in CUSTOM_DESC:
+            desc = CUSTOM_DESC[name]
+            if r["description"] != desc:
+                requests.patch(
+                    f"https://api.github.com/repos/{USERNAME}/{name}",
+                    headers=headers,
+                    json={"description": desc},
+                )
+                print(f"Updated description: {name}")
+
     table = build_table(repos)
     update_readme(table)

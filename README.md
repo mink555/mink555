@@ -45,7 +45,7 @@ insurance-compare의 Generative UI 데모 — LLM이 런타임에 렌더링할 U
 <td width="50%" valign="top">
 
 **[insurance-compare](https://github.com/mink555/insurance-compare)**  
-보험 PDF를 파싱해 당사·타사 암보험 특약을 자동 비교 — 규칙 기반 매칭으로 급부명 차이를 흡수하고 인사이트 리포트 생성
+보험 PDF 파싱 → 당사·타사 암보험 특약 자동 비교 및 인사이트 리포트 생성
 
 </td>
 </tr>
@@ -53,13 +53,13 @@ insurance-compare의 Generative UI 데모 — LLM이 런타임에 렌더링할 U
 <td width="50%" valign="top">
 
 **[agent-mvp-eval](https://github.com/mink555/agent-mvp-eval)**  
-보험 챗봇의 Tool Routing 고도화 — 54개 도구 중 필요한 것만 동적으로 선택해 오호출·비용·지연을 동시에 줄이는 RAG-MCP 패턴 구현
+RAG-MCP 패턴으로 54개 보험 도구 중 필요한 것만 동적 선택 — 오호출·비용·지연 개선
 
 </td>
 <td width="50%" valign="top">
 
 **[lina-bench](https://github.com/mink555/lina-bench)**  
-폐쇄망 MCP 서빙을 위한 오픈소스 LLM 선정 벤치마크 — 106턴 멀티턴 스트레스 테스트로 5개 모델의 Tool Calling 정확도·한국어 품질 비교
+폐쇄망 LLM 선정 벤치마크 — 106턴 멀티턴으로 5개 모델의 Tool Calling 정확도 비교
 
 </td>
 </tr>
@@ -67,13 +67,13 @@ insurance-compare의 Generative UI 데모 — LLM이 런타임에 렌더링할 U
 <td width="50%" valign="top">
 
 **[TAU2-Bench](https://github.com/mink555/TAU2-Bench)**  
-τ²-bench 기반 멀티턴 에이전트 평가 — 평균 19턴·6회 tool 호출의 고객센터 시나리오로 5개 모델의 실제 과업 완수율 측정
+τ²-bench 기반 멀티턴 에이전트 평가 — 고객센터 시나리오로 5개 모델의 과업 완수율 측정
 
 </td>
 <td width="50%" valign="top">
 
 **[KAKAO-FunctionChat-Bench](https://github.com/mink555/KAKAO-FunctionChat-Bench)**  
-카카오 FunctionChat-Bench 기반 한국어 Tool-Use 평가 — LLM-as-Judge(GPT-4.1)로 1,306개 케이스의 멀티턴 함수 선택 능력 채점
+카카오 FunctionChat-Bench 기반 — LLM-as-Judge로 1,306개 한국어 Tool-Use 케이스 채점
 
 </td>
 </tr>
@@ -81,7 +81,7 @@ insurance-compare의 Generative UI 데모 — LLM이 런타임에 렌더링할 U
 <td width="50%" valign="top">
 
 **[BFCL-V4-Bench](https://github.com/mink555/BFCL-V4-Bench)**  
-BFCL V4 기반 Function Calling 평가 프레임워크 — AST 채점으로 Llama·Mistral·Qwen3 시리즈의 싱글턴 FC 정확도를 정밀 측정
+BFCL V4 기반 Function Calling 벤치마크 — AST 채점으로 주요 LLM FC 정확도 정밀 측정
 
 </td>
 <td width="50%"></td>

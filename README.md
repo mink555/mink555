@@ -38,28 +38,28 @@ class minkyong:
 <tr>
 <td width="50%" valign="top">
 
-**[insurance-compare](https://github.com/mink555/insurance-compare)**
-보험 특약 비교 AI 솔루션 — PDF 상품요약서를 파싱해 당사·타사 암보험 특약을 구조화된 데이터로 비교하고 인사이트 리포트 생성
+**[insurance-compare-gen-ui](https://github.com/mink555/insurance-compare-gen-ui)**
+insurance-compare의 Generative UI 데모 — LLM이 런타임에 렌더링할 UI 컴포넌트를 직접 결정
 
 </td>
 <td width="50%" valign="top">
 
-**[agent-mvp-eval](https://github.com/mink555/agent-mvp-eval)**
-AI 에이전트 MVP 평가 프레임워크
+**[insurance-compare](https://github.com/mink555/insurance-compare)**
+보험 특약 비교 AI 솔루션 (라이나생명 기준 당사 vs 타사 암보험 비교)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-**[BFCL-V4-Bench](https://github.com/mink555/BFCL-V4-Bench)**
-Berkeley Function Calling Leaderboard v4
+**[agent-mvp-eval](https://github.com/mink555/agent-mvp-eval)**
+
 
 </td>
 <td width="50%" valign="top">
 
-**[KAKAO-FunctionChat-Bench](https://github.com/mink555/KAKAO-FunctionChat-Bench)**
-카카오 Function Chat 평가 벤치마크
+**[lina-bench](https://github.com/mink555/lina-bench)**
+
 
 </td>
 </tr>
@@ -67,15 +67,24 @@ Berkeley Function Calling Leaderboard v4
 <td width="50%" valign="top">
 
 **[TAU2-Bench](https://github.com/mink555/TAU2-Bench)**
-TAU2 에이전트 벤치마크
+
 
 </td>
 <td width="50%" valign="top">
 
-**[lina-bench](https://github.com/mink555/lina-bench)**
-LiNA 벤치마크
+**[KAKAO-FunctionChat-Bench](https://github.com/mink555/KAKAO-FunctionChat-Bench)**
+
 
 </td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[BFCL-V4-Bench](https://github.com/mink555/BFCL-V4-Bench)**
+
+
+</td>
+<td width="50%"></td>
 </tr>
 </table>
 <!-- PROJECTS_END -->

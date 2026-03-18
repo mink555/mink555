@@ -33,6 +33,7 @@ class minkyong:
 
 ### Projects
 
+<!-- PROJECTS_START -->
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -77,6 +78,7 @@ LiNA 벤치마크
 </td>
 </tr>
 </table>
+<!-- PROJECTS_END -->
 
 ---
 

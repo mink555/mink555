@@ -38,42 +38,28 @@ class minkyong:
 <tr>
 <td width="50%" valign="top">
 
-**[insurance-compare-gen-ui](https://github.com/mink555/insurance-compare-gen-ui)**  
-insurance-compare의 Generative UI 데모 — LLM이 런타임에 렌더링할 UI 컴포넌트를 직접 결정
-
-</td>
-<td width="50%" valign="top">
-
 **[insurance-compare](https://github.com/mink555/insurance-compare)**  
 보험 PDF 파싱 → 당사·타사 암보험 특약 자동 비교 및 인사이트 리포트 생성
 
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-**[agent-mvp-eval](https://github.com/mink555/agent-mvp-eval)**  
-RAG-MCP 패턴으로 54개 보험 도구 중 필요한 것만 동적 선택 — 오호출·비용·지연 개선
-
-</td>
-<td width="50%" valign="top">
-
-**[lina-bench](https://github.com/mink555/lina-bench)**  
-폐쇄망 LLM 선정 벤치마크 — 106턴 멀티턴으로 5개 모델의 Tool Calling 정확도 비교
-
-</td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 **[TAU2-Bench](https://github.com/mink555/TAU2-Bench)**  
 τ²-bench 기반 멀티턴 에이전트 평가 — 고객센터 시나리오로 5개 모델의 과업 완수율 측정
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **[KAKAO-FunctionChat-Bench](https://github.com/mink555/KAKAO-FunctionChat-Bench)**  
 카카오 FunctionChat-Bench 기반 — LLM-as-Judge로 1,306개 한국어 Tool-Use 케이스 채점
+
+</td>
+<td width="50%" valign="top">
+
+**[insurance-compare-gen-ui](https://github.com/mink555/insurance-compare-gen-ui)**  
+insurance-compare의 Generative UI 데모 — LLM이 런타임에 렌더링할 UI 컴포넌트를 직접 결정
 
 </td>
 </tr>
@@ -82,6 +68,20 @@ RAG-MCP 패턴으로 54개 보험 도구 중 필요한 것만 동적 선택 — 
 
 **[BFCL-V4-Bench](https://github.com/mink555/BFCL-V4-Bench)**  
 BFCL V4 기반 Function Calling 벤치마크 — AST 채점으로 주요 LLM FC 정확도 정밀 측정
+
+</td>
+<td width="50%" valign="top">
+
+**[agent-mvp-eval](https://github.com/mink555/agent-mvp-eval)**  
+RAG-MCP 패턴으로 54개 보험 도구 중 필요한 것만 동적 선택 — 오호출·비용·지연 개선
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[lina-bench](https://github.com/mink555/lina-bench)**  
+폐쇄망 LLM 선정 벤치마크 — 106턴 멀티턴으로 5개 모델의 Tool Calling 정확도 비교
 
 </td>
 <td width="50%"></td>
